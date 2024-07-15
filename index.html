@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Etch-A-Sketch</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="controls-container">
+            <h2>Controls:</h2>
+            <label for="color-canvas">Pick a color:</label>
+            <div class="color-picker-container">
+                <canvas width="300px" height="300px" id="color-canvas"></canvas>
+                <input type="range" min="0" max="360" value="50" class="multi-color-slider">
+            </div>
+            <button class="random-color-button">Random colors</button>
+            <button class="fade-button">Fade to black</button>
+            <button class="clear-button">Clear the grid</button>
+        </div>
+        <div class="grid-range-container">
+            <h1>Etch-A-Sketch</h1>
+            <div class="grid-container"></div>
+            <div class="slide-container">
+                <input type="range" min="1" max="100" value="20" class="grid-size-slider" id="grid-size-slider" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="10" label="10"></option>
+                    <option value="20" label="20"></option>
+                    <option value="30" label="30"></option>
+                    <option value="40" label="40"></option>
+                    <option value="50" label="50"></option>
+                    <option value="60" label="60"></option>
+                    <option value="70" label="70"></option>
+                    <option value="80" label="80"></option>
+                    <option value="90" label="90"></option>
+                    <option value="100" label="100"></option>
+                </datalist>
+            </div>
+            <label for="grid-size-slider">Grid size</label>
+        </div>
+    </div>
+    <div class="footer">Created by Elena A.</div>
+</body>
+</html>
